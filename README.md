@@ -1,6 +1,6 @@
-# 💄 Glambook - Makeup Artist Booking Platform  
+# 💄 Makeup Artist Booking Platform  
 
-A responsive **mini web app** built with **Next.js + TypeScript** that simulates the booking flow of a Makeup Artist platform.  
+A responsive **web app** built with **Next.js + TypeScript** that simulates the booking flow of a Makeup Artist platform.  
 Designed with a **red + white luxury theme** inspired by the **MelMUA brand**, focusing on **modern UI/UX**, responsiveness, and smooth booking flow.  
 
 ---
