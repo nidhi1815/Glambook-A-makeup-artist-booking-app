@@ -1,0 +1,305 @@
+// src/data/artists.ts
+
+export const mockArtists = [
+  {
+    id: "1",
+    name: "Aarohi Sharma",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 3500,
+    rating: 4.8,
+    reviewCount: 120,
+    location: "Mumbai",
+    specialties: ["Bridal", "Airbrush", "Party Glam"]
+  },
+  {
+    id: "2",
+    name: "Ritika Verma",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 5000,
+    rating: 4.9,
+    reviewCount: 98,
+    location: "Delhi",
+    specialties: ["Bridal", "HD Makeup", "Festive Looks"]
+  },
+  {
+    id: "3",
+    name: "Meera Nair",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 4200,
+    rating: 4.7,
+    reviewCount: 85,
+    location: "Bangalore",
+    specialties: ["Runway", "Editorial", "Party Glam"]
+  },
+  {
+    id: "4",
+    name: "Tanvi Iyer",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 2800,
+    rating: 4.6,
+    reviewCount: 75,
+    location: "Hyderabad",
+    specialties: ["Bridal", "Minimal", "Day Out"]
+  },
+  {
+    id: "5",
+    name: "Priya Kapoor",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 6000,
+    rating: 5.0,
+    reviewCount: 143,
+    location: "Kolkata",
+    specialties: ["Luxury Bridal", "Red Carpet", "Photoshoot"]
+  },
+  {
+    id: "6",
+    name: "Ishita Reddy",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 3200,
+    rating: 4.4,
+    reviewCount: 63,
+    location: "Chennai",
+    specialties: ["Bridal", "Festive", "Traditional"]
+  },
+  {
+    id: "7",
+    name: "Sanya Bansal",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 7000,
+    rating: 4.9,
+    reviewCount: 210,
+    location: "Pune",
+    specialties: ["Editorial", "HD Makeup", "Creative Looks"]
+  },
+  {
+    id: "8",
+    name: "Ananya Joshi",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 2500,
+    rating: 4.3,
+    reviewCount: 54,
+    location: "Jaipur",
+    specialties: ["Bridal", "Festive", "Natural Glam"]
+  },
+  {
+    id: "9",
+    name: "Neha Chatterjee",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 4800,
+    rating: 4.8,
+    reviewCount: 132,
+    location: "Lucknow",
+    specialties: ["Traditional Bridal", "Airbrush", "Festive"]
+  },
+  {
+    id: "10",
+    name: "Divya Singh",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 3500,
+    rating: 4.5,
+    reviewCount: 67,
+    location: "Ahmedabad",
+    specialties: ["Minimal Makeup", "Day Out", "Office Look"]
+  },
+    {
+    id: "11",
+    name: "Kavya Menon",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 5500,
+    rating: 4.7,
+    reviewCount: 104,
+    location: "Kochi",
+    specialties: ["Bridal", "Festive", "Airbrush"]
+  },
+  {
+    id: "12",
+    name: "Pooja Sethi",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 3000,
+    rating: 4.4,
+    reviewCount: 60,
+    location: "Indore",
+    specialties: ["Minimal", "Office Look", "Casual Glam"]
+  },
+  {
+    id: "13",
+    name: "Shruti Deshmukh",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 4800,
+    rating: 4.8,
+    reviewCount: 140,
+    location: "Nagpur",
+    specialties: ["Bridal", "Runway", "Editorial"]
+  },
+  {
+    id: "14",
+    name: "Aditi Jain",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 6500,
+    rating: 5.0,
+    reviewCount: 170,
+    location: "Chandigarh",
+    specialties: ["Luxury Bridal", "Airbrush", "Destination Wedding Looks"]
+  },
+  {
+    id: "15",
+    name: "Nisha Malhotra",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 2200,
+    rating: 4.2,
+    reviewCount: 45,
+    location: "Surat",
+    specialties: ["Casual Glam", "Festive", "Natural"]
+  },
+  {
+    id: "16",
+    name: "Radhika Kulkarni",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 4000,
+    rating: 4.6,
+    reviewCount: 88,
+    location: "Bhopal",
+    specialties: ["Party Glam", "Bridal", "Red Carpet"]
+  },
+  {
+    id: "17",
+    name: "Simran Arora",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 7500,
+    rating: 4.9,
+    reviewCount: 200,
+    location: "Amritsar",
+    specialties: ["Bridal", "HD Makeup", "Editorial"]
+  },
+  {
+    id: "18",
+    name: "Bhavna Saxena",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 1800,
+    rating: 3.9,
+    reviewCount: 35,
+    location: "Patna",
+    specialties: ["Minimal", "Day Out", "Office Look"]
+  },
+  {
+    id: "19",
+    name: "Kiran Reddy",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 5600,
+    rating: 4.7,
+    reviewCount: 121,
+    location: "Visakhapatnam",
+    specialties: ["Bridal", "Festive", "Airbrush"]
+  },
+  {
+    id: "20",
+    name: "Mitali Das",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 3100,
+    rating: 4.5,
+    reviewCount: 74,
+    location: "Guwahati",
+    specialties: ["Festive", "Editorial", "Runway"]
+  },
+  {
+    id: "21",
+    name: "Rekha Pillai",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 8000,
+    rating: 5.0,
+    reviewCount: 250,
+    location: "Thiruvananthapuram",
+    specialties: ["Luxury Bridal", "Airbrush", "Red Carpet"]
+  },
+  {
+    id: "22",
+    name: "Manisha Yadav",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 2700,
+    rating: 4.3,
+    reviewCount: 50,
+    location: "Kanpur",
+    specialties: ["Casual Glam", "Day Out", "Office Look"]
+  },
+  {
+    id: "23",
+    name: "Sakshi Thakur",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 3600,
+    rating: 4.6,
+    reviewCount: 92,
+    location: "Varanasi",
+    specialties: ["Bridal", "Festive", "Traditional"]
+  },
+  {
+    id: "24",
+    name: "Ankita Bhattacharya",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 5000,
+    rating: 4.8,
+    reviewCount: 110,
+    location: "Ranchi",
+    specialties: ["Editorial", "Photoshoot", "Creative"]
+  },
+  {
+    id: "25",
+    name: "Komal Jha",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 4200,
+    rating: 4.5,
+    reviewCount: 80,
+    location: "Mysore",
+    specialties: ["Festive", "Natural Glam", "Minimal"]
+  },
+  {
+    id: "26",
+    name: "Harini Rao",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 7200,
+    rating: 4.9,
+    reviewCount: 190,
+    location: "Coimbatore",
+    specialties: ["Luxury Bridal", "Destination Weddings", "Airbrush"]
+  },
+  {
+    id: "27",
+    name: "Shreya Banerjee",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 3100,
+    rating: 4.4,
+    reviewCount: 67,
+    location: "Howrah",
+    specialties: ["Casual Glam", "Photoshoot", "Office Look"]
+  },
+  {
+    id: "28",
+    name: "Roshni Gupta",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80",
+    price: 4600,
+    rating: 4.7,
+    reviewCount: 105,
+    location: "Noida",
+    specialties: ["Bridal", "HD Makeup", "Runway"]
+  },
+  {
+    id: "29",
+    name: "Vaishnavi Patil",
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80",
+    price: 2500,
+    rating: 4.1,
+    reviewCount: 41,
+    location: "Nashik",
+    specialties: ["Minimal", "Day Out", "Festive"]
+  },
+  {
+    id: "30",
+    name: "Chaitra Shetty",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+    price: 5800,
+    rating: 4.8,
+    reviewCount: 132,
+    location: "Mangalore",
+    specialties: ["Bridal", "Airbrush", "Editorial"]
+  },
+
+];

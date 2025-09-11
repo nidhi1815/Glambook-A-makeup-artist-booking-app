@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -14,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Glambook",
-  description: "sikh rhi hu abhi",
+  description: "Book your perfect look with top makeup artists instantly",
 };
 
 export default function RootLayout({
@@ -27,7 +28,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+       {children}
+        <Footer/>
       </body>
     </html>
   );
