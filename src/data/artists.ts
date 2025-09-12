@@ -1,5 +1,3 @@
-// src/data/artists.ts
-
 export const mockArtists = [
   {
     id: "1",
@@ -9,7 +7,7 @@ export const mockArtists = [
     rating: 4.8,
     reviewCount: 120,
     location: "Mumbai",
-    specialties: ["Bridal", "Airbrush", "Party Glam"]
+    specialties: ["Bridal", "Airbrush", "Party and Glam"]
   },
   {
     id: "2",
@@ -19,7 +17,7 @@ export const mockArtists = [
     rating: 4.9,
     reviewCount: 98,
     location: "Delhi",
-    specialties: ["Bridal", "HD Makeup", "Festive Looks"]
+    specialties: ["Bridal",  "Festive Looks" ,"Casual"]
   },
   {
     id: "3",
@@ -29,7 +27,7 @@ export const mockArtists = [
     rating: 4.7,
     reviewCount: 85,
     location: "Bangalore",
-    specialties: ["Runway", "Editorial", "Party Glam"]
+    specialties: ["Runway", "Faishon and Editorial","Casual", "Party and Glam"]
   },
   {
     id: "4",
@@ -39,7 +37,7 @@ export const mockArtists = [
     rating: 4.6,
     reviewCount: 75,
     location: "Hyderabad",
-    specialties: ["Bridal", "Minimal", "Day Out"]
+    specialties: ["Bridal", "Minimal", "Faishon and Editorial"]
   },
   {
     id: "5",
@@ -49,7 +47,7 @@ export const mockArtists = [
     rating: 5.0,
     reviewCount: 143,
     location: "Kolkata",
-    specialties: ["Luxury Bridal", "Red Carpet", "Photoshoot"]
+    specialties: ["Luxury Bridal", "Red Carpet", "Faishon and Editorial"]
   },
   {
     id: "6",
@@ -89,7 +87,7 @@ export const mockArtists = [
     rating: 4.8,
     reviewCount: 132,
     location: "Lucknow",
-    specialties: ["Traditional Bridal", "Airbrush", "Festive"]
+    specialties: ["Traditional Bridal", "Airbrush", "Festive" ,"Faishon and Editorial"]
   },
   {
     id: "10",
@@ -119,7 +117,7 @@ export const mockArtists = [
     rating: 4.4,
     reviewCount: 60,
     location: "Indore",
-    specialties: ["Minimal", "Office Look", "Casual Glam"]
+    specialties: ["Minimal", "Office Look", "Party and Glam"]
   },
   {
     id: "13",
@@ -149,7 +147,7 @@ export const mockArtists = [
     rating: 4.2,
     reviewCount: 45,
     location: "Surat",
-    specialties: ["Casual Glam", "Festive", "Natural"]
+    specialties: ["Casual Glam", "Festive", "Natural", "speciality"]
   },
   {
     id: "16",
@@ -159,7 +157,7 @@ export const mockArtists = [
     rating: 4.6,
     reviewCount: 88,
     location: "Bhopal",
-    specialties: ["Party Glam", "Bridal", "Red Carpet"]
+    specialties: ["Party Glam", "Bridal", "Red Carpet","speciality"]
   },
   {
     id: "17",
@@ -199,7 +197,7 @@ export const mockArtists = [
     rating: 4.5,
     reviewCount: 74,
     location: "Guwahati",
-    specialties: ["Festive", "Editorial", "Runway"]
+    specialties: ["Festive", "Editorial", "Runway","speciality"]
   },
   {
     id: "21",
@@ -209,7 +207,7 @@ export const mockArtists = [
     rating: 5.0,
     reviewCount: 250,
     location: "Thiruvananthapuram",
-    specialties: ["Luxury Bridal", "Airbrush", "Red Carpet"]
+    specialties: ["Luxury Bridal", "Airbrush", "speciality"]
   },
   {
     id: "22",
@@ -219,7 +217,7 @@ export const mockArtists = [
     rating: 4.3,
     reviewCount: 50,
     location: "Kanpur",
-    specialties: ["Casual Glam", "Day Out", "Office Look"]
+    specialties: ["Casual", "speciality", "Office Look"]
   },
   {
     id: "23",
@@ -229,7 +227,7 @@ export const mockArtists = [
     rating: 4.6,
     reviewCount: 92,
     location: "Varanasi",
-    specialties: ["Bridal", "Festive", "Traditional"]
+    specialties: ["Bridal", "Festive", "Traditional" , "speciality"]
   },
   {
     id: "24",
@@ -259,7 +257,7 @@ export const mockArtists = [
     rating: 4.9,
     reviewCount: 190,
     location: "Coimbatore",
-    specialties: ["Luxury Bridal", "Destination Weddings", "Airbrush"]
+    specialties: ["Bridal", "Destination Weddings", "Airbrush","speciality"]
   },
   {
     id: "27",
@@ -269,7 +267,7 @@ export const mockArtists = [
     rating: 4.4,
     reviewCount: 67,
     location: "Howrah",
-    specialties: ["Casual Glam", "Photoshoot", "Office Look"]
+    specialties: ["Casual", "Photoshoot", "Office Look"]
   },
   {
     id: "28",
@@ -279,7 +277,7 @@ export const mockArtists = [
     rating: 4.7,
     reviewCount: 105,
     location: "Noida",
-    specialties: ["Bridal", "HD Makeup", "Runway"]
+    specialties: ["Bridal", "HD Makeup", "Runway","speciality"]
   },
   {
     id: "29",
@@ -289,7 +287,7 @@ export const mockArtists = [
     rating: 4.1,
     reviewCount: 41,
     location: "Nashik",
-    specialties: ["Minimal", "Day Out", "Festive"]
+    specialties: ["Minimal", "Day Out", "Festive" , "Party and Glam"]
   },
   {
     id: "30",
@@ -299,7 +297,7 @@ export const mockArtists = [
     rating: 4.8,
     reviewCount: 132,
     location: "Mangalore",
-    specialties: ["Bridal", "Airbrush", "Editorial"]
+    specialties: ["Bridal", "Airbrush", "Editorial","speciality"]
   },
 
 ];
