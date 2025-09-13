@@ -30,7 +30,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   return (
     <main className="px-6 py-12">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-red-600 to-red-500 text-white py-20 mb-16">
+      <div className="relative bg-gradient-to-r from-pink-600 to-pink-500 text-white py-20 mb-16">
         <div className="text-center max-w-3xl mx-auto px-4">
           {/* Premium Beauty Services Label */}
           <span className="inline-block bg-white/20 text-white text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wide mb-6">
@@ -65,7 +65,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         </div>
       </div>
 
-      {/* ✅ Search Bar (newly added) */}
+      {/*Search Bar */}
       <div className="mb-12">
         <SearchBar/>
       </div>

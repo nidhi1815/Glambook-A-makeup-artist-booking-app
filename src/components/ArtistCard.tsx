@@ -54,7 +54,7 @@ export default function ArtistCard({
         <p className="text-sm text-gray-500">{location}</p>
 
         {/* Price */}
-        <p className="mt-2 text-red-600 font-semibold">₹{price}</p>
+        <p className="mt-2 text-pink-600 font-semibold">₹{price}</p>
 
         {/* Specialties */}
         <div className="mt-3 flex flex-wrap gap-2">
@@ -70,11 +70,11 @@ export default function ArtistCard({
       </div>
 
       {/* Book Button  */}
-      
-      <button className="absolute bottom-4 right-4 bg-red-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-700 hover:cursor-pointer transition">
+      <Link href={`/book/${id}`}>
+      <button className="absolute bottom-4 right-4 bg-pink-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-700 hover:cursor-pointer transition">
         Book
       </button>
-      
+      </Link>
     </div>
   );
 }

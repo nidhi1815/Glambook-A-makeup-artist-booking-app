@@ -24,11 +24,11 @@ export default function CategoryCard({
     >
       <div className="relative h-48 w-full">
         <Image src={image} alt={title} fill className="object-cover" />
-        <div className="absolute inset-0 bg-red-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+        <div className="absolute inset-0 bg-pink-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
       </div>
 
       <div className="p-4">
-        <h3 className="text-lg font-semibold group-hover:text-red-600 transition-colors">
+        <h3 className="text-lg font-semibold group-hover:text-pink-600 transition-colors">
           {title}
         </h3>
         <p className="text-gray-600">{description}</p>

@@ -4,11 +4,9 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-   <section className="relative h-screen flex items-center justify-center text-center text-white">
-
-
+    <section className="relative h-screen flex items-center justify-center text-center text-white">
       {/* Background Image */}
-      <Image 
+      <Image
         src="/Hero.jpeg"
         alt="Makeup artist"
         fill
@@ -17,8 +15,7 @@ export default function Hero() {
       />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-red-500/80 via-red-500/40 to-white" />
-
+      <div className="absolute inset-0 bg-gradient-to-b from-pink-400/80 via-red-400/40 to-white" />
 
       {/* Content */}
       <div className="relative z-10 max-w-2xl px-4">
@@ -28,9 +25,11 @@ export default function Hero() {
         <p className="text-lg md:text-xl mb-6">
           Connect with top makeup artists instantly
         </p>
-        <button className="bg-red-400 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition">
-          Book Now
-        </button>
+        <a href="#categories">
+          <button className="bg-pink-400 hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition">
+            Book Now
+          </button>
+        </a>
       </div>
     </section>
   );
