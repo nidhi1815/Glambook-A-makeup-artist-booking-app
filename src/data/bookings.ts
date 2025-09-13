@@ -2,7 +2,7 @@ export interface Booking {
   id: string;
   client: string;
   service: string;
-  date: string;       
+  date: string;
   time: string;
   price: number;
   status: "upcoming" | "completed";

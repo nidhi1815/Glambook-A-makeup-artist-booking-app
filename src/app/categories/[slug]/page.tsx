@@ -3,7 +3,6 @@ import { categories } from "@/data/categories";
 import ArtistCard from "@/components/ArtistCard";
 import SearchBar from "@/components/SearchBar";
 
-
 interface CategoryPageProps {
   params: { slug: string };
 }
@@ -67,22 +66,22 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
       {/*Search Bar */}
       <div className="mb-12">
-        <SearchBar/>
+        <SearchBar />
       </div>
 
       {/* Artists Grid */}
-{filteredArtists.length > 0 ? (
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    {filteredArtists.map((artist) => (
-      // pass categoryTitle AFTER the spread so it overrides if needed
-      <ArtistCard key={artist.id} {...artist} categorySlug={slug} />
-    ))}
-  </div>
-) : (
-  <p className="text-center text-gray-500">
-    No artists available in this category yet.
-  </p>
-)}
+      {filteredArtists.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredArtists.map((artist) => (
+            // pass categoryTitle AFTER the spread so it overrides if needed
+            <ArtistCard key={artist.id} {...artist} categorySlug={slug} />
+          ))}
+        </div>
+      ) : (
+        <p className="text-center text-gray-500">
+          No artists available in this category yet.
+        </p>
+      )}
     </main>
   );
 }

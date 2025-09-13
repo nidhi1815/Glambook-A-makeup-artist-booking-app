@@ -7,7 +7,7 @@ type CategoryCardProps = {
   title: string;
   description: string;
   image: string;
-  slug: string; // 👈 add this
+  slug: string;
 };
 
 export default function CategoryCard({
@@ -15,15 +15,21 @@ export default function CategoryCard({
   title,
   description,
   image,
-  slug, // 👈 use it
+  slug,
 }: CategoryCardProps) {
   return (
     <Link
-      href={`/categories/${slug}`} // 👈 use slug directly
+      href={`/categories/${slug}`} //
       className="block bg-white rounded-xl shadow-md overflow-hidden transition cursor-pointer group hover:shadow-lg hover:scale-105 duration-300"
     >
       <div className="relative h-48 w-full">
-        <Image src={image} alt={title} fill className="object-cover" />
+        <Image
+          src={image}
+          alt={title}
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
         <div className="absolute inset-0 bg-pink-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
       </div>
 

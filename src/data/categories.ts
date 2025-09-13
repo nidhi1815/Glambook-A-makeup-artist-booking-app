@@ -16,7 +16,7 @@ export const categories = [
     image:
       "https://images.unsplash.com/photo-1594257967508-3dc371476ed7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     icon: "sparkles",
-    slug: "partyandglam"
+    slug: "partyandglam",
   },
   {
     id: "3",
@@ -25,7 +25,7 @@ export const categories = [
     image:
       "https://images.unsplash.com/photo-1672794776762-18dddc72982e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     icon: "palette",
-    slug: "casual"
+    slug: "casual",
   },
   {
     id: "4",

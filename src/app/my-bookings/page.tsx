@@ -8,12 +8,14 @@ export default function MyBookingsPage() {
   const [activeTab, setActiveTab] = useState<"upcoming" | "past">("upcoming");
 
   const filteredBookings = bookings.filter((b) =>
-    activeTab === "upcoming" ? b.status === "upcoming" : b.status === "completed"
+    activeTab === "upcoming"
+      ? b.status === "upcoming"
+      : b.status === "completed"
   );
 
   return (
     <div className="relative min-h-screen p-6 overflow-hidden">
-      {/* Background Image (faint watermark) */}
+      {/* Background Image*/}
       <Image
         src="/bg-page.jpg" // or /bg-page.jpg depending on your file
         alt="Background"

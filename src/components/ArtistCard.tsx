@@ -26,9 +26,9 @@ export default function ArtistCard({
   specialties,
   categorySlug,
 }: ArtistCardProps) {
-  
   // Fallback if no categoryTitle is passed (uses first specialty slugified)
-  const fallbackCategory = specialties?.[0]?.toLowerCase().replace(/\s+/g, "") ?? "general";
+  const fallbackCategory =
+    specialties?.[0]?.toLowerCase().replace(/\s+/g, "") ?? "general";
   const categoryParam = encodeURIComponent(categorySlug ?? fallbackCategory);
   return (
     <div className="relative bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:scale-105 transition cursor-pointer">
@@ -38,6 +38,7 @@ export default function ArtistCard({
           src={image}
           alt={name}
           fill
+          sizes="100vw"
           className="object-cover"
         />
       </div>
@@ -50,9 +51,7 @@ export default function ArtistCard({
           <div className="flex items-center text-yellow-500">
             <Star className="w-4 h-4 fill-yellow-500" />
             <span className="ml-1 text-sm font-medium">{rating}</span>
-            <span className="ml-1 text-gray-500 text-sm">
-              ({reviewCount})
-            </span>
+            <span className="ml-1 text-gray-500 text-sm">({reviewCount})</span>
           </div>
         </div>
 
@@ -77,9 +76,9 @@ export default function ArtistCard({
 
       {/* Book Button  */}
       <Link href={`/booking/${id}`}>
-      <button className="absolute bottom-4 right-4 bg-pink-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-700 hover:cursor-pointer transition">
-        Book
-      </button>
+        <button className="absolute bottom-4 right-4 bg-pink-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-700 hover:cursor-pointer transition">
+          Book
+        </button>
       </Link>
     </div>
   );
