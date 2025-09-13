@@ -12,6 +12,7 @@ type ArtistCardProps = {
   reviewCount: number;
   location: string;
   specialties: string[];
+  categorySlug?: string;
 };
 
 export default function ArtistCard({
@@ -23,7 +24,12 @@ export default function ArtistCard({
   reviewCount,
   location,
   specialties,
+  categorySlug,
 }: ArtistCardProps) {
+  
+  // Fallback if no categoryTitle is passed (uses first specialty slugified)
+  const fallbackCategory = specialties?.[0]?.toLowerCase().replace(/\s+/g, "") ?? "general";
+  const categoryParam = encodeURIComponent(categorySlug ?? fallbackCategory);
   return (
     <div className="relative bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:scale-105 transition cursor-pointer">
       {/* Image */}
@@ -70,7 +76,7 @@ export default function ArtistCard({
       </div>
 
       {/* Book Button  */}
-      <Link href={`/book/${id}`}>
+      <Link href={`/booking/${id}`}>
       <button className="absolute bottom-4 right-4 bg-pink-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-700 hover:cursor-pointer transition">
         Book
       </button>

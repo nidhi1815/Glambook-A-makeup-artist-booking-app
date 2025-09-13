@@ -1,5 +1,7 @@
 "use client";
+
 import { useState } from "react";
+import Image from "next/image";
 import { bookings } from "@/data/bookings";
 
 export default function MyBookingsPage() {
@@ -10,7 +12,16 @@ export default function MyBookingsPage() {
   );
 
   return (
-    <div className="p-6">
+    <div className="relative min-h-screen p-6 overflow-hidden">
+      {/* Background Image (faint watermark) */}
+      <Image
+        src="/bg-page.jpg" // or /bg-page.jpg depending on your file
+        alt="Background"
+        fill
+        className="object-cover opacity-50 -z-10"
+        priority
+      />
+
       <h1 className="text-2xl font-bold mb-6">My Bookings</h1>
 
       {/* Tabs */}
@@ -50,7 +61,7 @@ export default function MyBookingsPage() {
               <div className="flex items-center text-sm text-gray-600 mt-1">
                 📅 {new Date(b.date).toDateString()} &nbsp; ⏰ {b.time}
               </div>
-              <p className="mt-1 font-semibold text-pink-500">${b.price}</p>
+              <p className="mt-1 font-semibold text-pink-500">₹{b.price}</p>
             </div>
             <span
               className={`px-3 py-1 rounded-full text-sm font-medium ${

@@ -8,8 +8,8 @@ interface CategoryPageProps {
   params: { slug: string };
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const { slug } = params;
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { slug } = await params;
 
   // get category info
   const category = categories.find((c) => c.slug === slug);
@@ -71,17 +71,18 @@ export default function CategoryPage({ params }: CategoryPageProps) {
       </div>
 
       {/* Artists Grid */}
-      {filteredArtists.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredArtists.map((artist) => (
-            <ArtistCard key={artist.id} {...artist} />
-          ))}
-        </div>
-      ) : (
-        <p className="text-center text-gray-500">
-          No artists available in this category yet.
-        </p>
-      )}
+{filteredArtists.length > 0 ? (
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {filteredArtists.map((artist) => (
+      // pass categoryTitle AFTER the spread so it overrides if needed
+      <ArtistCard key={artist.id} {...artist} categorySlug={slug} />
+    ))}
+  </div>
+) : (
+  <p className="text-center text-gray-500">
+    No artists available in this category yet.
+  </p>
+)}
     </main>
   );
 }

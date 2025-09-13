@@ -1,11 +1,15 @@
+"use client"
 import { mockArtists } from "@/data/artists";
 import BookingForm from "@/components/BookingForm";
+import { useSearchParams } from "next/navigation";
 
 interface BookingPageProps {
   params: { artistId: string };
 }
 
 export default function BookingPage({ params }: BookingPageProps) {
+  const searchParams = useSearchParams();
+  const category = searchParams.get("category");
   const artist = mockArtists.find((a) => a.id === params.artistId);
 
   if (!artist) {

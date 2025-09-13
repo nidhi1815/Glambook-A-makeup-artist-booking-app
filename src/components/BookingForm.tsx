@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Calendar, Clock } from "lucide-react";
 import { addBooking } from "@/data/bookings";
-import { useRouter} from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
 interface Artist {
   id: string;
@@ -17,9 +17,9 @@ interface BookingFormProps {
 ///--
 
 export default function BookingForm({ artist }: BookingFormProps) {
-
   const router = useRouter();
-  
+  const searchParams = useSearchParams();
+  const selectedCategory = searchParams.get("category");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -27,33 +27,48 @@ export default function BookingForm({ artist }: BookingFormProps) {
   const [time, setTime] = useState("");
 
   const times = [
-    "09:00","10:00","11:00","12:00",
-    "13:00","14:00","15:00","16:00",
-    "17:00","18:00"
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00",
+    "18:00",
   ];
 
   const isFormValid = fullName && email && phone && date && time;
 
   const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
-  if (!isFormValid) return;
+    e.preventDefault();
+    if (!isFormValid) return;
 
-  addBooking({
-    id: Date.now().toString(),
-    client: fullName,
-    service: artist.specialties[0],
-    date,
-    time,
-    price: 200,
-    status: "upcoming",
-  });
-
-  router.push("/confirmation");
-};
-
+    addBooking({
+      id: Date.now().toString(),
+      client: artist.name,
+      service: selectedCategory ?? artist.specialties[0],
+      date,
+      time,
+      price: 200,
+      status: "upcoming",
+    });
+    router.push(
+      `/confirmation?client=${encodeURIComponent(
+        fullName
+      )}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(
+        phone
+      )}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(
+        time
+      )}&artist=${encodeURIComponent(artist.name)}&service=${encodeURIComponent(
+        artist.specialties[0]
+      )}&image=${encodeURIComponent(artist.image)}`
+    );
+  };
 
   return (
-    <form   onSubmit={handleSubmit} className="space-y-8 ">
+    <form onSubmit={handleSubmit} className="space-y-8 ">
       {/* Step Indicator */}
       <div className="flex items-center justify-center mb-6">
         <div className="flex items-center space-x-4">
@@ -84,7 +99,9 @@ export default function BookingForm({ artist }: BookingFormProps) {
 
       {/* Personal Details */}
       <div className="border border-red-200 rounded-xl p-6 space-y-4">
-        <h2 className="text-pink-500 font-semibold text-lg">Personal Details</h2>
+        <h2 className="text-pink-500 font-semibold text-lg">
+          Personal Details
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input
             type="text"
@@ -121,7 +138,10 @@ export default function BookingForm({ artist }: BookingFormProps) {
               onChange={(e) => setDate(e.target.value)}
               className="w-full border rounded-lg px-4 py-2 pr-10 focus:ring-2 focus:ring-pink-500"
             />
-            <Calendar className="absolute right-3 top-3 text-gray-400" size={18} />
+            <Calendar
+              className="absolute right-3 top-3 text-gray-400"
+              size={18}
+            />
           </div>
 
           <div className="grid grid-cols-3 gap-2">
