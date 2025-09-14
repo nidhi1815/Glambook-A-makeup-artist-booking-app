@@ -1,5 +1,3 @@
-"use client";
-
 import { FaInstagram, FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
@@ -35,7 +33,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://example.com/categories"
+                href="#categories"
                 className="hover:underline cursor-pointer"
               >
                 Categories
