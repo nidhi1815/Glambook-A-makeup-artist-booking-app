@@ -1,4 +1,4 @@
-# Artist Booking Platform 🎨✨
+# Makeup Artist Booking Platform ✨
 
 A simple artist booking platform built with **Next.js 13 (App Router)**, **Tailwind CSS**, and **TypeScript**.  
 Users can explore artists by category, search for specific specialties, and view detailed artist profiles.
@@ -10,16 +10,15 @@ Users can explore artists by category, search for specific specialties, and view
 - **Framework:** [Next.js 13](https://nextjs.org/) (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
-- **Icons & UI:** shadcn/ui, Lucide Icons
+- **Icons & UI:**  Lucide Icons, icons8
 - **Data Handling:** Server Components + Client Components
-- **Deployment Ready:** Vercel / Netlify
 
 ---
 
 ## ⚡ Features
 
 - Browse artists by **category**
-- **Search functionality** (instant filtering by specialty, name, or location)
+- **Search functionality** (instant filtering by specialty, name, or location )
 - Artist cards with:
   - Image  
   - Price  
